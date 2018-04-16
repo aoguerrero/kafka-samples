@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class Main {
 
-	static final Logger logger = LoggerFactory.getLogger(MiscUtils.class);
+	static final Logger logger = LoggerFactory.getLogger(Config.class);
 
 	public static void main(String[] args) throws Exception {
 		if (args.length == 1) {
@@ -13,9 +13,11 @@ public class Main {
 			if (firstParam.equals("--producer")) {
 				SampleProducer producer = new SampleProducer();
 				producer.run();
+				return;
 			} else if (firstParam.equals("--consumer")) {
 				SampleConsumer consumer = new SampleConsumer();
 				consumer.run();
+				return;
 			}
 		}
 		logger.error("Invalid parameters");

@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 
 public class SampleProducer {
 
-	static final Logger logger = LoggerFactory.getLogger(MiscUtils.class);
+	static final Logger logger = LoggerFactory.getLogger(Config.class);
 
 	public void run() throws Exception {
-		Properties config = MiscUtils.loadProperties();
+		Properties config = Config.loadProperties();
 		Properties kafkaProps = new Properties();
 
 		kafkaProps.put("bootstrap.servers", config.getProperty("kafka.server"));

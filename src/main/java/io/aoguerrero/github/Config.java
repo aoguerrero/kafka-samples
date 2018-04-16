@@ -9,9 +9,9 @@ import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MiscUtils {
+public class Config {
 
-	static final Logger logger = LoggerFactory.getLogger(MiscUtils.class);
+	static final Logger logger = LoggerFactory.getLogger(Config.class);
 
 	public static Properties loadProperties() {
 		String homeDir = System.getProperty("user.dir");
