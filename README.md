@@ -1,3 +1,5 @@
+# IMPORTANT: THIS PROJECT USES DEPRECATED LIBRARIES AND IS NOT MAINTAINED
+
 Generar paquete
 
     mvn clean package
